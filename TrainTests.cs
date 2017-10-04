@@ -58,6 +58,11 @@ namespace MTDUnitTests
             Assert.False(t1.IsEmpty);
         }
 
+        [Test]
+        public void TestLastDomino()
+        {
+            Assert.AreEqual(12, t1.LastDomino.Side1);
+        }
 
     }
 }
