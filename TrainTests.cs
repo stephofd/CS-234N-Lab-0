@@ -129,5 +129,12 @@ namespace MTDUnitTests
 
             
         }
+
+        [Test]
+        public void TestToString()
+        {
+            string expected = "Side 1: 12  Side 2: 12\n";
+            Assert.AreEqual(expected, t1.ToString());
+        }
     }
 }
