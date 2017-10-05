@@ -45,7 +45,10 @@ namespace MTDClasses
         {
             get
             {
-                return dominos[Count - 1];
+                if (!IsEmpty)
+                    return dominos[Count - 1];
+                else
+                    return null;
             }
         }
 
